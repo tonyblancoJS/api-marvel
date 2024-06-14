@@ -1,7 +1,6 @@
 fetch('https://gateway.marvel.com/v1/public/characters?ts=3000&apikey=1bc3d7e314f5e0cd801d3544235c7672&hash=7b79f76efd7e1255e65bfe653dfb02be')
 .then (response => response.json())
 .then (json => {
-    
     const characterCardHTML = json.data.results.map(character => 
         `<div class="card">
             <a href="${character.urls[1].url}" target="_blank">
@@ -13,6 +12,9 @@ fetch('https://gateway.marvel.com/v1/public/characters?ts=3000&apikey=1bc3d7e314
         </div>
         `).join('');
     document.getElementById('character-cards').innerHTML = characterCardHTML;
+})
+.then (() =>{
+    console.log("hola mundo");
 })
 .catch(error=>console.log('Error de Marvel', error));
 

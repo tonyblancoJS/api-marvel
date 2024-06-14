@@ -3,49 +3,58 @@
     margin: 0;
     box-sizing: border-box;
 }
+.main{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
 .container{
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 2rem;
     justify-content: center;
+    width: auto;
+    width:1280px;
 }
 
 .card{
-    width: 280px;
-    border: black solid 3px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 13.3rem;
+    height: 19rem;
+    border: black solid 1px;    
     padding: 0px;
     background-color: rgb(255, 153, 0);
-    border-radius: 22px;
+    border-radius: 12px;
     box-shadow: 20px 15px 10px rgb(104, 96, 96);
     transition: all 300ms;
 }
-div .card:hover{
+.card:hover{
     transform: scale(1.05) ;
     border: solid 3px rgb(133, 10, 10);
     box-shadow: 20px 15px 10px rgb(133, 10, 10);
 }
-h1, h2, h3, h4, div{
+h1, h2, h3, h4{
     text-align: center;
-    padding: 20px;
 }
 
 .card img{
-    width: 275px;
-    height: 350px;
-    border-radius: 20px 20px 0px 0px;
+    width: 13.15rem;
+    height: 15rem;
+    border-radius: 10px 10px 0px 0px;
 }
-.logo-marvel{
+/*.logo-marvel{
     width: 389px;
     height: 129px;
-}
+}*/
 .title{
     z-index: 999; /*para que al desplazarme hacia abajo y al tocar las cards no pasen por encima del encabezado*/
     position: sticky;
     top: 0;
-    padding: 20px;
-    height: 180px;
-    background-color: rgb(94, 145, 199);
+    text-align: center;
+    height: 3.7rem;
+    background-color: black;
     /*background-image: url("../Marvel/assets/354056386_660326246127613_1405937454552671017_n.jpg");*/
     box-shadow: 0px 15px 10px rgb(104, 96, 96);
 }
@@ -53,11 +62,10 @@ h1, h2, h3, h4, div{
 #title{
     color: white;
     background-color: red;
-    padding: 20px;
+    padding: 0rem 0.4rem 0rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 3rem;
 }
 body {
     /*background-image: url("/assets/marvel.jpeg");*/
