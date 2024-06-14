@@ -156,4 +156,7 @@ body {
     .container{
         grid-template-columns: repeat(1, auto);
     }
+    .title{
+        display:none;
+    }
 }
